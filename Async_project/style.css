@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+footer > p {
+    padding: 20px;
+}
+
+#searchBtn, #orderBy, #countInput, #searchInput {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px black solid;
+}
