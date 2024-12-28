@@ -10,4 +10,7 @@
      height: 100%;
      object-fit: cover;
      border-radius: 8px;
+     -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
+     -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
+     box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
 }

@@ -5,6 +5,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    height: 100%;
+}
+
 main {
     padding: 30px;
 }
@@ -16,12 +20,18 @@ ul {
 footer > p {
     padding: 20px;
 }
+footer {
+    margin-bottom: 0px;
+}
 
 #searchBtn, #orderBy, #countInput, #searchInput {
     padding: 5px 10px;
     border-radius: 10px;
     background-color: white;
     border: 1px black solid;
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
 }
 
 #searchBtn:hover{
