@@ -23,3 +23,7 @@ footer > p {
     background-color: white;
     border: 1px black solid;
 }
+
+#searchBtn:hover{
+    background-color: rgba(196, 193, 193, 0.292);
+}
