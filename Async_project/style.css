@@ -23,10 +23,30 @@ footer > p {
 footer {
     margin-bottom: 0px;
 }
-
-#searchBtn, #orderBy, #countInput, #searchInput {
+#searchInput {
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px black solid;
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18); 
+}
+#orderBy, #countInput {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px black solid;
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
+    cursor: pointer;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 20px;
     background-color: white;
     border: 1px black solid;
     -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
@@ -36,4 +56,5 @@ footer {
 
 #searchBtn:hover{
     background-color: rgba(196, 193, 193, 0.292);
+    cursor: pointer;
 }

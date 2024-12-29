@@ -3,6 +3,8 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 
+const clientId = import.meta.env.VITE_API_CLIENT_ID;
+
 const init = () => {
     Header();
     Main();
@@ -12,9 +14,9 @@ const init = () => {
 init ();
 
 const getPhotos =  async (keyword, photoNum,order) => {
-    const data = await fetch (`https://api.unsplash.com/search/photos/?page=1&query=${keyword}&per_page=${photoNum}&order_by=${order}&client_id=jDB4fchpNbXy01vXofIpQK5v8TpClyxUVHN8HCBCHh0`);
+    const data = await fetch (`https://api.unsplash.com/search/photos/?page=1&query=${keyword}&per_page=${photoNum}&order_by=${order}&client_id=${clientId}`);
     const dataJSON = await data.json(); 
-    const photos =dataJSON.results;
+    const photos = dataJSON.results;
     printPhotos(photos);
 };
 
