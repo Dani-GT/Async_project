@@ -2,7 +2,7 @@ import "./Header.css";
 
 const template = () => `
 <h1> Photosplash</h1>
-<input type="text" id="searchInput" placeholder="Ejemplo gato, perro..." />
+<input type="text" id="searchInput" placeholder="Ejemplo: gato, perro..." />
 <select id="countInput">
     <option value="20">20</option>
     <option value="30">30</option>

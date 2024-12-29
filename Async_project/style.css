@@ -5,10 +5,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 main {
     padding: 30px;
-    height: 80vh;
+    
 }
 
 ul {
@@ -18,9 +17,7 @@ ul {
 footer > p {
     padding: 20px;
 }
-footer {
-    margin-bottom: 0px;
-}
+
 #searchInput {
     padding: 5px 10px;
     border-radius: 20px;

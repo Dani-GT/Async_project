@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 
-const clientId = import.meta.env.VITE_API_CLIENT_ID;
+const clientId = import.meta.env.VITE_CLIENT_ID;
 
 const init = () => {
     Header();
