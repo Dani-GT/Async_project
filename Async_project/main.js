@@ -24,13 +24,21 @@ const printPhotos = (photos) => {
    
     const container = document.querySelector("#gallery");
     container.innerHTML = "";
-    for (const photo of photos) {
-        const li = document.createElement("li");
-        li.innerHTML = `
-        <img src="${photo.urls.regular}" alt="${photo.alt_description}"/>
-        `
-        container.appendChild(li)
-    }
+    message.textContent = "";
+
+    if (photos.length === 0) {
+        const message = document.querySelector("#message");
+        message.textContent = "No se encontraron resultados. Intenta otra búsqueda...";
+
+    } else {
+        for (const photo of photos) {
+            const li = document.createElement("li");
+            li.innerHTML = `
+            <img src="${photo.urls.regular}" alt="${photo.alt_description}"/>
+            `
+            container.appendChild(li)
+        }
+    } 
 };
 
 document.querySelector("#searchBtn").addEventListener("click", ()=>{
