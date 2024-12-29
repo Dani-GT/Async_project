@@ -7,6 +7,7 @@ const template = () => `
     <option value="20">20</option>
     <option value="30">30</option>
     <option value="50">50</option>
+    <option value="70">70</option>
 </select>
 <select id="orderBy">
     <option value="relevant">Relevante</option>
