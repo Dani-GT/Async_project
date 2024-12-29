@@ -26,7 +26,7 @@ const printPhotos = (photos) => {
     container.innerHTML = "";
     message.textContent = "";
 
-    if (photos.length === 0) {
+    if (photos.length === 0 || keywordValue === "") {
         const message = document.querySelector("#message");
         message.textContent = "No se encontraron resultados. Intenta otra búsqueda...";
         const suggestions = ["Animales", "Paises", "Futbol", "Naturaleza", "Ciudades"];
@@ -54,7 +54,7 @@ const printPhotos = (photos) => {
 
 document.querySelector("#searchBtn").addEventListener("click", () => {
     const keywordValue = document.querySelector("#searchInput").value.trim();
-    const photoNumValue = parseInt(document.querySelector("#countInput").value, 30);
+    const photoNumValue = parseInt(document.querySelector("#countInput").value, 10);
     const orderByValue = document.querySelector("#orderBy").value;
         getPhotos(keywordValue, photoNumValue, orderByValue);
         document.querySelector("#searchInput").value = "";
