@@ -18,3 +18,7 @@
 main {
     min-height: 80vh;
 }
+
+#message {
+    font-size: medium;
+}

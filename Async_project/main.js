@@ -29,7 +29,18 @@ const printPhotos = (photos) => {
     if (photos.length === 0) {
         const message = document.querySelector("#message");
         message.textContent = "No se encontraron resultados. Intenta otra búsqueda...";
-
+        const suggestions = ["Animales", "Paises", "Futbol", "Naturaleza", "Ciudades"];
+        const suggestionContainer = document.createElement("div");
+        suggestionContainer.innerHTML = "<p>Prueba con estas opciones:</p>";
+        suggestions.forEach(suggestion => {
+            const button = document.createElement("button");
+            button.textContent = suggestion;
+            button.addEventListener("click", () => {
+                getPhotos(suggestion, 20, "relevant");
+            });
+            suggestionContainer.appendChild(button);
+        });
+        message.appendChild(suggestionContainer);
     } else {
         for (const photo of photos) {
             const li = document.createElement("li");
@@ -41,13 +52,14 @@ const printPhotos = (photos) => {
     } 
 };
 
-document.querySelector("#searchBtn").addEventListener("click", ()=>{
-    const keywordValue = document.querySelector("#searchInput").value;
-    const photoNumValue = document.querySelector("#countInput").value;
+document.querySelector("#searchBtn").addEventListener("click", () => {
+    const keywordValue = document.querySelector("#searchInput").value.trim();
+    const photoNumValue = parseInt(document.querySelector("#countInput").value, 10);
     const orderByValue = document.querySelector("#orderBy").value;
-    getPhotos(keywordValue,photoNumValue,orderByValue);
-    document.querySelector("#searchInput").value = "";
-    document.querySelector("#orderBy").value ="relevant";
+        getPhotos(keywordValue, photoNumValue, orderByValue);
+        document.querySelector("#searchInput").value = "";
+        document.querySelector("#orderBy").value = "relevant";
+    
 });
 
 getPhotos("Japon", "20", "relevant");
