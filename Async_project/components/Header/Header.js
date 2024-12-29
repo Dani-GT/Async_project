@@ -2,12 +2,11 @@ import "./Header.css";
 
 const template = () => `
 <h1> Photosplash</h1>
-<input type="text" id="searchInput" placeholder="Escribe por ejemplo gato, coche..." />
+<input type="text" id="searchInput" placeholder="Ejemplo gato, perro..." />
 <select id="countInput">
     <option value="20">20</option>
     <option value="30">30</option>
     <option value="50">50</option>
-    <option value="100">100</option>
 </select>
 <select id="orderBy">
     <option value="relevant">Relevante</option>
