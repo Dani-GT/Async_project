@@ -26,7 +26,7 @@ const printPhotos = (photos) => {
     container.innerHTML = "";
     message.textContent = "";
 
-    if (photos.length === 0 || keywordValue === "") {
+    if (photos.length === 0) {
         const message = document.querySelector("#message");
         message.textContent = "No se encontraron resultados. Intenta otra búsqueda...";
         const suggestions = ["Animales", "Paises", "Futbol", "Naturaleza", "Ciudades"];
