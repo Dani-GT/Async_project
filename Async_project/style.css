@@ -7,7 +7,6 @@
 
 main {
     padding: 30px;
-    
 }
 
 ul {
@@ -16,6 +15,11 @@ ul {
 
 footer > p {
     padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 #searchInput {
@@ -49,7 +53,7 @@ footer > p {
     box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.18);
 }
 
-#searchBtn:hover{
-    background-color: rgba(196, 193, 193, 0.292);
+#searchBtn:hover, #orderBy:hover, #countInput:hover, #searchInput:hover {
+    border: 2px rgb(175, 83, 8) solid;
     cursor: pointer;
 }
