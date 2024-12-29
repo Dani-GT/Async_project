@@ -54,7 +54,7 @@ const printPhotos = (photos) => {
 
 document.querySelector("#searchBtn").addEventListener("click", () => {
     const keywordValue = document.querySelector("#searchInput").value.trim();
-    const photoNumValue = parseInt(document.querySelector("#countInput").value, 10);
+    const photoNumValue = parseInt(document.querySelector("#countInput").value, 30);
     const orderByValue = document.querySelector("#orderBy").value;
         getPhotos(keywordValue, photoNumValue, orderByValue);
         document.querySelector("#searchInput").value = "";
