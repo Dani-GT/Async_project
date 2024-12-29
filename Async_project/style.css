@@ -22,11 +22,29 @@ p {
     margin-top: 30px;
 }
 
+button {  
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 16px;
+    max-width: 100px;
+    text-align: center;
+    border: 1px solid #030303;
+    -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+}
+
+button:hover {
+    background-color: #c78c161d;
+    cursor: pointer;
+}
+
 @media (min-width: 530px) and (max-width: 860px) {
     header {
         display: flex;
         flex-direction: column;
         gap: 2px;
+        width: 100%;
     }
 
      .top-row h1 {
@@ -53,6 +71,7 @@ p {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-left: 0; 
     }
 
     .bottom-row #orderBy, .bottom-row #countInput  {
@@ -73,6 +92,7 @@ p {
         display: flex;
         flex-direction: column;
         gap: 2px;
+        width: 100%;
     }
 
     .top-row h1 {
@@ -91,7 +111,7 @@ p {
     .top-row #searchInput {
         min-width: 150px;
         max-width: 300px;
-        margin-right: 20px;
+        margin-right: 1px;
    
     }
 
@@ -99,6 +119,8 @@ p {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-left: 0; 
+       
     }
 
     .bottom-row #orderBy, .bottom-row #countInput  {
